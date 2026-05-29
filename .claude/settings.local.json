@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Copy-Item \"assets\\\\time de mkt.png\" \"src\\\\assets\\\\time-de-mkt.png\")",
+      "PowerShell(Copy-Item \"assets\\\\FICA A DICA.png\" \"src\\\\assets\\\\fica-a-dica.png\")",
+      "PowerShell(Copy-Item \"assets\\\\FICA_A_DICA_ICON.png\" \"src\\\\assets\\\\fica-a-dica-icon.png\")",
+      "PowerShell(Copy-Item \"assets\\\\FROM \\(TV Series 2022- \\) - Cartazes - The Movie Database \\(TMDB\\) \\(8\\).png\" \"src\\\\assets\\\\from-serie.png\")"
+    ]
+  }
+}
