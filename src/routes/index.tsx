@@ -13,16 +13,23 @@ import orgulhoIcon from "@/assets/orgulho-da-firma-icon.png";
 import orgulhoGif from "@/assets/orgulho.gif";
 import fofocaGif from "@/assets/fofoca.gif";
 import intrigasImg from "@/assets/intrigas.jpeg";
+import higorMantoImg from "@/assets/higor-manto-brasil.png";
+import atumDiogoImg from "@/assets/atum-do-diogo.jpeg";
 import fotoIigor from "@/assets/iigor.png";
-import bolo1 from "@/assets/bolo-1.jpeg";
-import bolo2 from "@/assets/bolo-2.jpeg";
-import bolo3 from "@/assets/bolo-3.jpeg";
-import florr from "@/assets/florr.png";
+import camilaPlaylistImg from "@/assets/camila-playlist.png";
+import timeDeVerdeImg from "@/assets/time-de-verde.png";
 import fotoPaulo from "@/assets/paulo.png";
 import fotoLeticia from "@/assets/leticia.png";
 import fotoPolini from "@/assets/polini.png";
 import fotoJasper from "@/assets/jasper.png";
+import timeAcademiaImg from "@/assets/time-na-academia.png";
 import fotoAna from "@/assets/ana.png";
+import robotversarioMarco from "@/assets/ROBOTVERSARIO_09-06_MARCO.png";
+import canecas from "@/assets/canecas.jpeg";
+import canecasDoTime from "@/assets/canecas-do-time.png";
+import englishBreak from "@/assets/english-break-primeiro-encontro.jpeg";
+import rankingImg from "@/assets/ranking.png";
+import ansiosoGif from "@/assets/ansioso.gif";
 import { Megaphone, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -35,7 +42,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const editions = ["Edição #107", "29 Mai 2026", "Tempo de leitura: 4 min", "☕ Pegue seu café"];
+const editions = ["Edição #108 – Especial Copa ⚽", "19 Jun 2026", "Tempo de leitura: 5 min", "🇧🇷 Veste a camiseta!"];
 
 
 
@@ -72,54 +79,140 @@ function Index() {
       {/* HERO */}
       <section id="destaque" className="container mx-auto px-6 pt-8 pb-12">
         {/* Barra de meta */}
-        <div className="border-t-2 border-foreground flex items-center justify-between pt-4 pb-10">
+        <div className="border-t-2 border-foreground flex items-center justify-between pt-4 pb-6">
           <div className="inline-flex items-center gap-2 bg-pink/10 text-pink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
             <Megaphone className="w-3.5 h-3.5" /> Manchete da semana
           </div>
           <span className="hidden md:block text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            Edição #107 · 29 Mai 2026
+            Edição #108 · 19 Jun 2026 · Especial Copa ⚽
           </span>
         </div>
 
         {/* Manchete principal */}
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.87] mb-8">
-          Oficialmente aberta a <span className="text-pink">temporada</span> mais <span className="italic text-teal">caipira</span> do ano.
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.87] mb-6">
+          A <span className="text-green-600">Copa do Mundo</span> chegou e o Robonews entrou em <span className="italic text-yellow-500">modo</span> <span className="whitespace-nowrap">seleção. <span className="text-5xl md:text-6xl align-middle">⚽</span></span>
         </h1>
 
-        {/* Descrição + tags */}
-        <div className="mb-14 space-y-4">
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Chegamos naquela época do ano em que absolutamente tudo começa a girar em torno de:
-          </p>
-          <div className="flex items-center gap-3 overflow-x-auto pb-1">
-            <span className="shrink-0 inline-flex items-center gap-2 bg-teal/10 text-primary px-5 py-2.5 rounded-full border border-teal/20 text-sm font-bold">🌽 festa junina</span>
-            <span className="shrink-0 inline-flex items-center gap-2 bg-foreground/5 px-5 py-2.5 rounded-full border border-foreground/10 text-sm font-bold">⚽ Copa do Mundo</span>
-            <span className="shrink-0 inline-flex items-center gap-2 bg-pink/10 text-pink px-5 py-2.5 rounded-full border border-pink/20 text-sm font-bold">💘 Dia dos Namorados</span>
-            <span className="shrink-0 inline-flex items-center gap-2 bg-foreground/5 px-5 py-2.5 rounded-full border border-foreground/10 text-sm font-bold">🎉 tudo ao mesmo tempo 😄</span>
+        {/* Intro Copa */}
+        <div className="mb-8 space-y-4">
+          <div className="inline-flex items-center gap-2 bg-green-600/10 text-green-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+            🇧🇷 A Copa finalmente chegou!
           </div>
+          <p className="text-lg leading-relaxed">
+            Depois de meses de expectativa, álbuns de figurinhas, palpites otimistas, palpites nem tão otimistas assim e muitas discussões esportivas, ela finalmente começou: a Copa do Mundo chegou! ⚽
+          </p>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            E como vocês já devem imaginar, essa edição do Robonews entrou oficialmente em modo Copa.
+          </p>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            Por aqui teremos de tudo um pouco: ranking do bolão, entrevistas exclusivas com os líderes da classificação, comentaristas esportivos de ocasião, flagras temáticos, correio elegante e, claro, todas aquelas histórias que só acontecem na Roboteasy.
+          </p>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            Então já prepara a camisa da seleção, pega uma paçoquinha, faz sua aposta para a próxima rodada e vem conferir tudo o que rolou nas últimas semanas 👇
+          </p>
+        </div>
+      </section>
+
+      {/* CURIOSIDADES DA COPA */}
+      <section className="container mx-auto px-6 py-12">
+        <div className="border-t-2 border-foreground pt-4 pb-8">
+          <div className="inline-flex items-center gap-2 bg-green-600/10 text-green-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+            🌎 Curiosidades da Copa
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold">
+            E falando em Copa, nem só de palpites vive um torcedor…
+          </h2>
+          <p className="text-muted-foreground text-base mt-3">
+            A edição de hoje traz algumas curiosidades incríveis sobre a Copa do Mundo! ⚽
+          </p>
         </div>
 
-        {/* Bloco editorial — time de mkt */}
-        <div className="space-y-8">
-          <p className="text-lg leading-relaxed">
-            Inclusive, o time de marketing gostaria de informar que a situação mental atual está exatamente assim:
-          </p>
+        <div className="space-y-6">
 
-          <div className="border-2 border-foreground rounded-3xl overflow-hidden shadow-pop">
-            <img
-              src={timeDeMkt}
-              alt="Time de Marketing"
-              className="w-full h-auto"
-            />
+          {/* Quem mais venceu */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-green-50">
+            <div className="p-8 space-y-5">
+              <div className="inline-flex items-center gap-2 bg-green-600/15 text-green-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🏆 Quem mais venceu Copas do Mundo?
+              </div>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                O Brasil segue soberano no topo da lista com 5 títulos mundiais:
+              </p>
+              <div className="space-y-3">
+                {[
+                  { code: "br", country: "Brasil", titles: "5 títulos", highlight: true },
+                  { code: "de", country: "Alemanha", titles: "4 títulos", highlight: false },
+                  { code: "it", country: "Itália", titles: "4 títulos", highlight: false },
+                  { code: "ar", country: "Argentina", titles: "3 títulos", highlight: false },
+                  { code: "fr", country: "França", titles: "2 títulos", highlight: false },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className={`flex items-center justify-between px-5 py-3.5 rounded-2xl border-2 ${item.highlight ? "bg-green-600 text-white border-green-700" : "bg-background border-foreground/10"}`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <img
+                        src={`https://flagcdn.com/w40/${item.code}.png`}
+                        alt={item.country}
+                        className="w-8 h-5 object-cover rounded-sm shadow-sm"
+                      />
+                      <span className={`font-bold text-base ${item.highlight ? "text-white" : ""}`}>{item.country}</span>
+                    </div>
+                    <span className={`text-sm font-semibold ${item.highlight ? "text-white/90" : "text-muted-foreground"}`}>{item.titles}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Ou seja: mesmo quando a ansiedade bate, ainda temos uma estrela a mais para exibir 😎⭐
+              </p>
+            </div>
           </div>
 
-          <p className="text-lg leading-relaxed">
-            E sinceramente?<br />
-            A gente nem sabe mais pelo que tá mais ansioso 👀
-          </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
-            Enquanto o clima de Copa já começa a aparecer, as paçoquinhas dão os primeiros sinais de vida e o cheiro de pinhão invade Santa Catarina… bora ver tudo o que rolou nas últimas semanas? 👇
-          </p>
+          {/* Mais gols */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden">
+            <div className="grid md:grid-cols-[1fr_auto] gap-0">
+              <div className="p-8 space-y-3 flex flex-col justify-center">
+                <div className="inline-flex items-center gap-2 bg-yellow-400/20 text-yellow-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                  ⚽ O jogo com mais gols da história das Copas
+                </div>
+                <p className="text-base leading-relaxed">
+                  A partida entre <strong>Áustria e Suíça</strong>, em 1954, terminou em incríveis <span className="font-bold text-green-600 text-xl">7 × 5</span>.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Foram 12 gols em um único jogo. Inacreditável!
+                </p>
+                <p className="text-base leading-relaxed">
+                  Mas cá entre nós, o que seria bem plausível — e a gente acharia revigorante — era um placar de <strong>7 para o Brasil</strong> e 1 para a Alemanha 😄
+                </p>
+              </div>
+              <div className="flex items-center justify-center bg-yellow-400/10 px-10 py-8 border-l-2 border-foreground">
+                <div className="flex flex-col items-center gap-2">
+                  <div className="flex items-center gap-4">
+                    <span className="text-6xl font-bold text-green-600">7</span>
+                    <span className="text-3xl font-semibold text-muted-foreground">×</span>
+                    <span className="text-6xl font-bold text-foreground/40">5</span>
+                  </div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">1954</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Curiosidade bônus */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-foreground text-background">
+            <div className="p-8 space-y-4">
+              <div className="inline-flex items-center gap-2 bg-background/15 text-background px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🤔 Curiosidade bônus
+              </div>
+              <p className="text-xl font-bold leading-snug">
+                A expressão "o importante é competir" costuma durar exatamente até o primeiro jogo do seu bolão dar errado.
+              </p>
+              <p className="text-sm text-background/60 italic">
+                — Segundo o instituto VDCDR (Vozes da cabeça do Robonews)
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -138,48 +231,39 @@ function Index() {
             </p>
           </div>
 
-          {/* Card FROM — coluna única, largura total */}
-          <div className="bg-background text-foreground rounded-3xl overflow-hidden border-2 border-background/10 shadow-pop">
-            <div className="grid md:grid-cols-[260px_1fr]">
-              <img
-                src={fromSerie}
-                alt="FROM - A Série"
-                className="w-full h-full object-cover"
-              />
-              <div className="p-8 flex flex-col gap-4">
+          {/* Card GTA VI */}
+          <div className="bg-background text-foreground rounded-3xl overflow-hidden border-2 border-background/10 shadow-pop mb-6">
+            <div className="p-8 flex flex-col gap-4">
+              <div className="flex items-center gap-3">
                 <div className="inline-flex items-center gap-2 bg-pink/10 text-pink px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                  👀 Indicação
+                  🎮 Dica
                 </div>
-                <h3 className="text-3xl font-bold">FROM | Origem</h3>
                 <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Indicação by Mari
+                  Dica by JV
                 </div>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  Se você gosta de suspense, teorias malucas e séries que fazem você terminar um episódio e imediatamente pesquisar "explicação final", fica essa dica 👀
-                </p>
-
-                <div className="border-t border-foreground/10 pt-4 space-y-3">
-                  <span className="inline-flex items-center gap-1.5 bg-teal/10 text-primary px-3 py-1 rounded-full text-xs font-bold border border-teal/20">
-                    Disponível no Globoplay
-                  </span>
-                  <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">Sobre a série</p>
-                  <p className="text-base text-foreground leading-relaxed">
-                    Uma família está viajando quando acaba se perdendo na estrada e chega até uma pequena cidade aparentemente comum.
-                  </p>
-                  <p className="text-base font-semibold">
-                    O problema?<br />
-                    Depois de entrar… Ninguém consegue mais sair 😄
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    Presos em um loop misterioso e cercados por forças bizarras, os moradores precisam sobreviver enquanto tentam entender o que realmente está acontecendo naquele lugar.
-                  </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    E segundo fontes totalmente confiáveis do Robonews… As teorias já estão dominando os corredores da Roboteasy 👀
-                  </p>
-                </div>
+              </div>
+              <h3 className="text-3xl font-bold">GTA VI</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Depois de anos de espera, trailers analisados quadro a quadro e uma ansiedade coletiva da comunidade gamer, o lançamento de GTA VI finalmente está cada vez mais próximo.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Segundo o JV, inclusive, a empresa deveria considerar férias coletivas no lançamento para que todos possam jogar tranquilamente 😄
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Enquanto isso não acontece, fica a dica daquele que já é considerado um dos lançamentos mais aguardados da última década 👀
+              </p>
+              <div className="mt-2 rounded-2xl overflow-hidden border-2 border-foreground/10 aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/EiQEBYDox_k"
+                  title="GTA VI – Trailer Oficial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -207,35 +291,66 @@ function Index() {
               Mês de celebrar trajetórias importantes por aqui 💙
             </p>
 
-            {/* Galeria da fama */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
-              {[
-                { name: "Paulo",   years: 3, img: fotoPaulo },
-                { name: "Letícia", years: 1, img: fotoLeticia },
-                { name: "Polini",  years: 1, img: fotoPolini },
-                { name: "Jasper",  years: 2, img: fotoJasper },
-                { name: "Analu",   years: 1, img: fotoAna },
-              ].map((p, i) => (
-                <div key={i} className="flex flex-col items-center gap-3 text-center">
-                  <div className="w-full rounded-2xl border-2 border-foreground overflow-hidden shadow-pop bg-muted/30">
-                    <img src={p.img} alt={p.name} className="w-full h-auto object-contain" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-base">{p.name}</div>
-                    <div className="text-sm text-pink font-semibold">
-                      🎈 {p.years} {p.years === 1 ? "ano" : "anos"}
-                    </div>
-                  </div>
-                </div>
-              ))}
+            {/* Marco — robotversário */}
+            <div className="rounded-2xl overflow-hidden border-2 border-foreground shadow-pop">
+              <img src={robotversarioMarco} alt="Robotversário do Marco" className="w-full h-auto object-contain" />
             </div>
 
-            <div className="mt-10 border-t border-foreground/10 pt-6">
-              <div className="rounded-2xl overflow-hidden border-2 border-foreground shadow-pop">
-                <img src={orgulhoGif} alt="" className="w-full h-auto" />
+            <div className="mt-6 space-y-3">
+              <p className="text-base leading-relaxed font-semibold">
+                Parabéns ao Marco, que completou seu primeiro ano de Roboteasy.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Obrigado por fazer parte dessa história e por tudo o que construiu ao longo desse primeiro ciclo conosco 🚀
+              </p>
+            </div>
+
+            {/* Canecas */}
+            <div className="mt-10 border-t border-foreground/10 pt-8 space-y-5">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">☕</span>
+                <h3 className="text-2xl font-bold">Novas canecas chegando</h3>
               </div>
-              <p className="mt-6 text-base text-muted-foreground leading-relaxed">
-                Obrigado por fazerem parte dessa história e construírem tudo isso junto com a gente 🚀
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Os novos integrantes da Roboteasy começaram a receber suas canecas personalizadas e, sinceramente, a gente adora ver isso acontecer.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="border-2 border-foreground rounded-2xl overflow-hidden shadow-pop">
+                  <img src={canecas} alt="Canecas" className="w-full h-auto object-cover" />
+                </div>
+                <div className="border-2 border-foreground rounded-2xl overflow-hidden shadow-pop">
+                  <img src={canecasDoTime} alt="Canecas do time" className="w-full h-auto object-cover" />
+                </div>
+              </div>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                É sempre muito legal acompanhar a chegada de novas pessoas, novas histórias e novas perspectivas para o time. 💙
+              </p>
+              <p className="text-base font-semibold">
+                Sejam todos muito bem-vindos!
+              </p>
+            </div>
+
+            {/* English Break */}
+            <div className="mt-10 border-t border-foreground/10 pt-8 space-y-4">
+              <div className="flex items-center gap-3">
+                <img
+                  src="https://flagcdn.com/w40/us.png"
+                  alt="EUA"
+                  className="w-8 h-5 object-cover rounded-sm shadow-sm"
+                />
+                <h3 className="text-2xl font-bold">Primeiro English Break de Uno</h3>
+              </div>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Tivemos também a estreia oficial do English Break.
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                E como toda estreia merece um toque especial, a primeira edição contou com partidas de Uno inteiramente em inglês.
+              </p>
+              <div className="border-2 border-foreground rounded-2xl overflow-hidden shadow-pop">
+                <img src={englishBreak} alt="English Break – Primeiro Encontro" className="w-full h-auto object-cover" />
+              </div>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Entre cartas, risadas, dúvidas sobre pronúncia e negociações internacionais envolvendo +4, o encontro foi um sucesso 😄
               </p>
             </div>
           </div>
@@ -243,68 +358,86 @@ function Index() {
         </div>
       </section>
 
-      {/* ROBOTEASY EM MOVIMENTO */}
+      {/* BOLÃO DA COPA */}
       <section className="bg-foreground text-background py-20">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-            {/* Texto */}
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-pink/20 text-pink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
-                🚀 Novidade
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold leading-[0.95]">
-                Roboteasy em <span className="text-teal italic">Movimento</span>
-              </h2>
-              <p className="text-background/70 text-base leading-relaxed">
-                Se você gosta de acompanhar tudo o que acontece no universo corporativo da firma… Temos novidades! 👀
-              </p>
-              <p className="text-background/70 text-base leading-relaxed">
-                Lançamos o <strong className="text-background">Roboteasy em Movimento</strong>, nossa news Beta focada em:
-              </p>
-              <ul className="space-y-2 text-background/80 text-base">
-                {["entregas", "novos clientes", "visitas", "feedbacks", "novidades importantes"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-teal flex items-center justify-center text-teal-foreground text-xs font-bold shrink-0">✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-background/70 text-base leading-relaxed">
-                Porque essa última semana foi movimentada por aqui e a gente resolveu registrar tudo 😄
-              </p>
-              <a
-                href="https://roboteasy-movimento.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-pink text-pink-foreground px-7 py-3.5 rounded-full font-semibold shadow-pop hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
-              >
-                Acessar o Roboteasy em Movimento <ArrowRight className="w-4 h-4" />
-              </a>
+          {/* Cabeçalho */}
+          <div className="border-t-2 border-background/20 pt-4 pb-10">
+            <div className="inline-flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+              ⚽ Bolão da Copa
             </div>
-
-            {/* Card destaque */}
-            <div className="bg-background text-foreground rounded-3xl border-2 border-background/10 shadow-pop p-8 space-y-5">
-              <div className="text-4xl">🚀</div>
-              <h3 className="text-2xl font-bold">News Beta</h3>
-              <p className="text-muted-foreground text-base leading-relaxed">
-                Uma visão completa do que está acontecendo na Roboteasy — direto ao ponto, sem enrolação.
-              </p>
-              <div className="grid grid-cols-2 gap-3 pt-2">
-                {[
-                  { emoji: "📦", label: "Entregas" },
-                  { emoji: "🤝", label: "Novos clientes" },
-                  { emoji: "📍", label: "Visitas" },
-                  { emoji: "💬", label: "Feedbacks" },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 bg-teal/10 text-primary rounded-xl px-3 py-2 text-sm font-semibold border border-teal/20">
-                    <span>{item.emoji}</span> {item.label}
-                  </div>
-                ))}
-              </div>
-            </div>
-
+            <h2 className="text-4xl md:text-5xl font-bold leading-[0.95]">
+              Toda rodada o jogo <span className="italic text-yellow-400">muda</span>.
+            </h2>
+            <p className="text-background/70 text-base mt-4 max-w-xl leading-relaxed">
+              Acompanhe a classificação, os destaques e as histórias do nosso bolão.
+            </p>
           </div>
+
+          {/* Ranking */}
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-2 bg-background/10 text-background px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+                📊 Como está o ranking?
+              </div>
+              <p className="text-background/70 text-base leading-relaxed">
+                A cada rodada o jogo muda, a classificação muda e os especialistas de ocasião surgem por todos os cantos da empresa 😄
+              </p>
+              <p className="text-background/70 text-base leading-relaxed">
+                Confira abaixo a classificação atual do nosso Bolão da Copa:
+              </p>
+            </div>
+
+            <div className="rounded-3xl overflow-hidden border-2 border-background/20 shadow-pop">
+              <img src={rankingImg} alt="Ranking do Bolão da Copa" className="w-full h-auto" />
+            </div>
+
+            <div className="space-y-4">
+              <p className="text-background/80 text-base leading-relaxed text-center">
+                Lembrando que a bola está rolando e a qualquer momento esse ranking muda 👀
+              </p>
+              <div className="rounded-2xl overflow-hidden border-2 border-background/20 shadow-pop max-w-xs mx-auto">
+                <img src={ansiosoGif} alt="Ansioso" className="w-full h-auto" />
+              </div>
+            </div>
+
+            {/* Entrevista exclusiva */}
+            <div className="border-t border-background/20 pt-8 space-y-4">
+              <div className="inline-flex items-center gap-2 bg-background/10 text-background px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+                🎙️ Entrevista exclusiva com o líder
+              </div>
+              <p className="text-background/80 text-base leading-relaxed">
+                Nessa edição conversamos com o atual líder do ranking, <strong className="text-background">JV</strong>.
+              </p>
+              <div className="flex flex-col md:flex-row gap-8 items-stretch">
+                <div className="rounded-2xl overflow-hidden border-2 border-background/20 shadow-pop aspect-[9/16] md:w-64 shrink-0">
+                  <iframe
+                    src="https://www.youtube.com/embed/HVWrvnVUa6E"
+                    title="Entrevista exclusiva com o líder do bolão"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col justify-center gap-5 py-4">
+                  <div className="space-y-1">
+                    <p className="text-background/50 text-xs font-bold uppercase tracking-widest">Reflexão pós-rodada</p>
+                  </div>
+                  <p className="text-background/80 text-xl leading-relaxed">
+                    E já sabe, né?
+                  </p>
+                  <p className="text-background/70 text-base leading-relaxed">
+                    A liderança pode mudar a cada rodada,<br />mas uma coisa é certa:
+                  </p>
+                  <p className="text-background font-bold text-2xl leading-snug border-l-4 border-yellow-400 pl-4">
+                    Todo mundo é especialista até o primeiro resultado inesperado aparecer 😄
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -328,117 +461,202 @@ function Index() {
 
         <div className="space-y-8">
 
-          {/* RPG — verde/teal, texto esquerda, imagem direita */}
+          {/* Atum do Diogo */}
           <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-teal/15">
-            <div className="grid lg:grid-cols-[1fr_40%] items-stretch">
-              <div className="p-8 space-y-3 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 bg-foreground/10 text-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                  🎲 Intrigas glaciais no RPG
-                </div>
-                <p className="text-base leading-relaxed">
-                  A campanha de RPG segue rendendo histórias dignas de série 😄 Na sessão da vez, ambientada em uma exploração glacial, tivemos tensão, decisões questionáveis e algumas intrigas internas que o Robonews prefere não comentar em detalhes por questões diplomáticas 👀
-                </p>
-                <p className="text-base leading-relaxed opacity-70">
-                  Mas ouvimos boatos de uma história que envolvia uma queda mortal, dinheiro roubado, bolas de fogo e um acerto crítico... Dito isso, aparentemente o frio não era a única coisa deixando o clima da sessão tenso 😄
-                </p>
-              </div>
-              <div className="border-l-2 border-foreground">
-                <img src={intrigasImg} alt="Intrigas glaciais no RPG" className="w-full h-full object-cover" style={{ minHeight: '300px' }} />
-              </div>
-            </div>
-          </div>
-
-          {/* Higor — rosa, imagem esquerda, texto direita */}
-          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-pink/10">
-            <div className="grid lg:grid-cols-[40%_1fr] items-stretch">
-              <div className="border-r-2 border-foreground">
-                <img src={fotoIigor} alt="Higor e o álbum da Copa" className="w-full h-full object-cover" style={{ minHeight: '300px' }} />
-              </div>
-              <div className="p-8 space-y-3 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 bg-foreground/10 text-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                  ⚽ Higor e o álbum da Copa
-                </div>
-                <p className="text-base leading-relaxed">
-                  Enquanto muita gente ainda nem decidiu se vai fazer um álbum da copa… O Higor já entrou oficialmente no modo organização nível hard com as figurinhas dele 👀
-                </p>
-                <p className="text-base leading-relaxed opacity-70">
-                  Separações estratégicas, alinhamento perfeito e provavelmente algum método secreto que só ele entende. Se existir campeonato de montagem de álbum, temos um candidato forte 😄
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Carona — escuro, texto + botão centralizado */}
-          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-foreground text-background">
-            <div className="p-10 flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-1 space-y-3">
-                <div className="inline-flex items-center gap-2 bg-background/15 text-background px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                  🛵 Carona diferenciada
-                </div>
-                <p className="text-base leading-relaxed">
-                  Polini foi flagrado na garupa do Jasper em uma cena que transmitia exatamente a energia de: "missão secundária desbloqueada" 😄
-                </p>
-                <p className="text-base leading-relaxed opacity-70">
-                  O registro ficou tão cinematográfico que honestamente parecia abertura de sitcom dos anos 2000 👀
-                </p>
-              </div>
-              <a
-                href="https://agapys365-my.sharepoint.com/:v:/g/personal/marketing_roboteasy_com_br/IQCS0dweQDNlQoIq5_8eFnfcAYnrcgEEuED5i_okNLsVUqw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ODCT7Y"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 inline-flex items-center gap-2 bg-pink text-pink-foreground px-7 py-3.5 rounded-full font-bold border-2 border-background shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
-              >
-                Ver provas <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-
-          {/* Bolo — amarelo/primário */}
-          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-primary/10">
-            <div className="p-8 space-y-4">
+            <div className="p-8 space-y-3">
               <div className="inline-flex items-center gap-2 bg-foreground/10 text-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                🎂 O bolo que deu boa… mas também deu ruim
+                🐟 O fim de uma era
               </div>
               <p className="text-base leading-relaxed">
-                O bolo de aniversário da Ana enfrentou desafios no trajeto 😄 A cobertura decidiu explorar novos caminhos, resultando em uma aparência que alguns descreveram como:
+                Enquanto alguns apostam em misto quente, frutas ou iogurte no lanche da tarde...
               </p>
-              <div className="flex flex-wrap gap-2">
-                {["🌋 lama", "🍫 terreno pós-chuva", "🪨 massa corrida sabor chocolate"].map((d, i) => (
-                  <span key={i} className="bg-foreground text-background px-4 py-1.5 rounded-full text-sm font-bold">{d}</span>
-                ))}
-              </div>
+              <p className="text-base leading-relaxed">
+                Diogo seguia fiel ao seu já famoso atum 😄
+              </p>
+            </div>
+            <div className="border-t-2 border-foreground">
+              <img src={atumDiogoImg} alt="Atum do Diogo" className="w-1/2 mx-auto block" />
+            </div>
+            <div className="p-8 space-y-3">
+              <p className="text-base leading-relaxed">
+                Mas, para a felicidade de alguns e tristeza de outros, essa história teve uma reviravolta.
+              </p>
               <p className="text-base leading-relaxed opacity-70">
-                Mas apesar da estética duvidosa… o importante é que tava muito gostoso 👀
+                Depois de aproximadamente uma semana de protagonismo absoluto, o atum foi aposentado e deu lugar ao whey 👀
               </p>
-              <div className="grid grid-cols-3 gap-4">
-                {[bolo1, bolo2, bolo3].map((img, i) => (
-                  <div key={i} className="border-2 border-foreground rounded-2xl overflow-hidden shadow-pop">
-                    <img src={img} alt={`Bolo ${i + 1}`} className="w-full h-auto" />
-                  </div>
-                ))}
+              <p className="text-base leading-relaxed opacity-70">
+                O Robonews deseja sucesso ao novo integrante dessa jornada nutricional 💪😄
+              </p>
+            </div>
+          </div>
+
+          {/* Muay Thai */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-foreground text-background">
+            <div className="p-8 space-y-3">
+              <div className="inline-flex items-center gap-2 bg-background/15 text-background px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🥊 Time do Muay Thai
               </div>
+              <p className="text-base leading-relaxed">
+                Nas últimas semanas, alguns colaboradores resolveram trocar o sofá pelo tatame e começaram a treinar Muay Thai juntos após o expediente 😄
+              </p>
+            </div>
+            <div className="border-t-2 border-background/20">
+              <img src={timeAcademiaImg} alt="Time na academia de Muay Thai" className="w-full object-cover" />
+            </div>
+            <div className="p-8">
+              <p className="text-base leading-relaxed opacity-80">
+                O grupo vem crescendo e o Robonews já está acompanhando a evolução dos futuros campeões da firma 👀🥊
+              </p>
+            </div>
+          </div>
+
+          {/* Camila playlist */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-primary/10">
+            <div className="p-8 space-y-3">
+              <div className="inline-flex items-center gap-2 bg-foreground/10 text-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🎧 Músicas para trabalhar (e sofrer um pouquinho)
+              </div>
+              <p className="text-base leading-relaxed">
+                Toda pessoa tem uma playlist para focar. Mas a da Camila é diferenciada.
+              </p>
+            </div>
+            <div className="border-t-2 border-foreground/20">
+              <img src={camilaPlaylistImg} alt="Camila e sua playlist" className="w-full object-cover" />
+            </div>
+            <div className="p-8 space-y-3">
+              <p className="text-base leading-relaxed">
+                Ela foi flagrada ouvindo uma sequência de músicas curiosas para uma tarde de foco total no trabalho. Por precaução, o Robonews reforça:
+              </p>
+              <p className="text-base font-bold text-lg">
+                Não esqueçam de ser bonzinhos com a Camila hoje 💙
+              </p>
             </div>
           </div>
 
           {/* Flores — rosa suave, texto esquerda, imagem direita */}
-          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-pink/5">
-            <div className="grid lg:grid-cols-[1fr_40%] items-stretch">
-              <div className="p-8 space-y-3 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 bg-pink/20 text-pink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                  🌸 Operação Lego floral
+          {/* Invasão verde */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-green-600/10">
+            <div className="p-8 space-y-3">
+              <div className="inline-flex items-center gap-2 bg-green-600/20 text-green-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🟢 A invasão verde
+              </div>
+              <p className="text-base leading-relaxed">
+                Não sabemos exatamente como aconteceu. Não houve comunicado oficial, alinhamento prévio nem grupo secreto no Teams.
+              </p>
+              <p className="text-base leading-relaxed">
+                Mas, em determinado momento da semana, percebemos que uma quantidade suspeitamente alta de pessoas apareceu vestida em tons de verde 👀
+              </p>
+            </div>
+            <div className="border-t-2 border-foreground/20">
+              <img src={timeDeVerdeImg} alt="Time de verde" className="w-full object-cover" />
+            </div>
+            <div className="p-8 space-y-3">
+              <p className="text-base leading-relaxed">
+                Coincidência? Mensagem subliminar? Preparação psicológica para a Copa?
+              </p>
+              <p className="text-base leading-relaxed opacity-70">
+                O Robonews segue investigando 😄
+              </p>
+            </div>
+          </div>
+
+          {/* Correio Elegante */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-pink/10">
+            <div className="p-8 space-y-4">
+              <div className="inline-flex items-center gap-2 bg-pink/20 text-pink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                💌 Correio Elegante
+              </div>
+              <p className="text-base leading-relaxed">
+                Já que estamos vivendo simultaneamente uma Copa do Mundo e um Arraiá, nada mais justo do que resgatar uma das tradições mais importantes dessa época.
+              </p>
+              <p className="text-base leading-relaxed">
+                Chegou a hora de conferir alguns dos correios elegantes mais divertidos e criativos que rolaram pela firma 💙
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                {[
+                  "8U-xTFNxnyk",
+                  "pu-gW5N--1U",
+                  "xQkvVW5-Zi8",
+                ].map((id) => (
+                  <div key={id} className="rounded-2xl overflow-hidden border-2 border-foreground/10 aspect-[9/16]">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${id}`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm font-semibold text-pink">
+                Novidade: estendemos essa ação até dia 26/06 💌
+              </p>
+            </div>
+          </div>
+
+          {/* Comentaristas da Copa */}
+          <div className="border-2 border-green-600 rounded-3xl shadow-pop overflow-hidden bg-green-600 text-white">
+            {/* Faixa de topo */}
+            <div className="bg-yellow-400 px-8 py-3 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <img src="https://flagcdn.com/w40/br.png" alt="Brasil" className="w-8 h-5 object-cover rounded-sm shadow-sm" />
+                <span className="text-green-900 text-xs font-black uppercase tracking-widest">Copa do Mundo 2026</span>
+                <img src="https://flagcdn.com/w40/br.png" alt="Brasil" className="w-8 h-5 object-cover rounded-sm shadow-sm" />
+              </div>
+              <span className="text-green-900 text-lg">⚽</span>
+            </div>
+            <div className="p-8 space-y-4">
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">🎙️</span>
+                <div>
+                  <p className="text-xs font-black uppercase tracking-widest text-yellow-300">Novo quadro</p>
+                  <h3 className="text-2xl font-black leading-tight">Comentaristas da Copa</h3>
                 </div>
-                <p className="text-base leading-relaxed">
-                  Depois que a Ana ganhou flores de Lego de presente, ela se juntou com a Maria e o Polini pra assumir a missão da montagem 😄
-                </p>
-                <p className="text-base leading-relaxed opacity-70">
-                  Entre peças perdidas, dúvidas existenciais e aquele clássico "isso aqui encaixa onde?", o trio conseguiu avançar no projeto com níveis altíssimos de concentração 👀
-                </p>
-                <p className="text-base font-semibold">
-                  O resultado? Engenharia, paciência e trabalho em equipe em sua forma mais pura 🌸
+              </div>
+              <p className="text-base leading-relaxed text-white/90">
+                E já que essa edição é especial, inauguramos também um novo quadro.
+              </p>
+              <p className="text-base leading-relaxed text-white/70">
+                Diretamente da Central Robonews de Jornalismo Esportivo™️, convocamos alguns dos torcedores mais animados da empresa para comentar a estreia do Brasil.
+              </p>
+              <div className="rounded-2xl overflow-hidden border-2 border-yellow-400/40 aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/pcHzMlRAzZs"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="flex items-center gap-3 bg-yellow-400/15 border border-yellow-400/30 rounded-2xl px-5 py-3">
+                <span className="text-xl">⚽</span>
+                <p className="text-base font-semibold text-yellow-200">
+                  Opiniões técnicas? Talvez. Opiniões emocionadas? Com certeza 😄
                 </p>
               </div>
-              <div className="border-l-2 border-foreground">
-                <img src={florr} alt="Operação Lego Floral" className="w-full h-full object-cover" style={{ minHeight: '300px' }} />
+            </div>
+          </div>
+
+          {/* Compilado de erros */}
+          <div className="border-2 border-foreground rounded-3xl shadow-pop overflow-hidden bg-primary/10">
+            <div className="p-8 space-y-4">
+              <div className="inline-flex items-center gap-2 bg-foreground/10 text-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🎬 Compilado de erros de gravação
+              </div>
+              <p className="text-base leading-relaxed">
+                Nem toda gravação sai perfeita de primeira.
+              </p>
+              <p className="text-base leading-relaxed opacity-70">
+                E graças a isso, acumulamos uma coleção maravilhosa de erros, risadas e tentativas frustradas de manter a seriedade.
+              </p>
+              <div className="flex justify-center">
+                <div className="rounded-2xl overflow-hidden border-2 border-foreground/10 aspect-[9/16] w-64">
+                  <iframe
+                    src="https://www.youtube.com/embed/wRLhTboBy4A"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -446,70 +664,45 @@ function Index() {
         </div>
       </section>
 
-      {/* ROBOQUIZ */}
+      {/* ACADEMIA ROBOTEASY */}
       <section id="roboquiz" className="bg-foreground text-background">
         <div className="container mx-auto px-6 py-12">
 
           <div className="border-t-2 border-background/20 pt-4 pb-6">
-            <h2 className="text-4xl md:text-5xl font-bold">🧠 Roboquiz</h2>
+            <h2 className="text-4xl md:text-5xl font-bold">🎓 Academia Roboteasy</h2>
           </div>
 
-          <div className="border-2 border-background/20 rounded-3xl overflow-hidden max-w-2xl mx-auto">
-            <div className="bg-pink/15 px-8 py-10 space-y-5">
-              <div className="inline-flex items-center gap-2 bg-background/10 text-background px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                ⚡ Desafio tech
+          <div className="border-2 border-teal/40 rounded-3xl overflow-hidden max-w-2xl mx-auto">
+            <div className="bg-teal/10 px-8 py-10 space-y-5">
+              <div className="inline-flex items-center gap-2 bg-teal/20 text-teal px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
+                🎓 Novidade
               </div>
-              <p className="text-xl font-bold leading-snug">
-                Um desafio para fazer download de conhecimento!
+              <p className="text-2xl font-bold leading-snug">
+                Academia Roboteasy oficialmente no ar!
+              </p>
+              <p className="text-base leading-relaxed opacity-90">
+                Agora oficialmente disponível para todo o time!
               </p>
               <p className="text-base leading-relaxed opacity-80">
-                Teste seus neurônios, descubra curiosidades tech e veja quem manja de tudo por aqui. Preparado?
+                A partir de agora, vocês terão acesso à plataforma com conteúdos e trilhas de aprendizagem, incluindo a Trilha de Bem-Estar que já está disponível, para apoiar seu desenvolvimento. 💙
               </p>
-              <div className="border-t border-background/20 pt-5 space-y-3">
-                <div className="inline-flex items-center gap-2 bg-pink/30 text-pink px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest w-fit">
-                  📋 Enquete
-                </div>
-                <p className="text-base leading-relaxed">
-                  O que você achou do <strong>novo formato de EasyTalk</strong>? Os feedbacks ajudam a melhorar cada vez mais os encontros, temas e experiências 👀 Então, corre responder! 😄
+              <a
+                href="https://academia.roboteasy.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-teal text-background px-7 py-3.5 rounded-full font-bold border-2 border-background/30 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
+              >
+                👉 Acessar Academia <ArrowRight className="w-4 h-4" />
+              </a>
+              <div className="border-t border-background/20 pt-5 space-y-2">
+                <p className="text-sm leading-relaxed opacity-70">
+                  Seu login e senha foram enviados por e-mail.
                 </p>
-                <a
-                  href="https://pollunit.com/polls/RQNqYlWG7MqkDXk9CqGVIg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-pink text-pink-foreground px-7 py-3.5 rounded-full font-bold border-2 border-background/30 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
-                >
-                  Responda aqui <ArrowRight className="w-4 h-4" />
-                </a>
+                <p className="text-sm leading-relaxed opacity-70">
+                  E se surgir qualquer dificuldade no acesso, já sabe: é só chamar a <strong className="text-background opacity-100">Bruna, do Marketing</strong>, pelo Teams.
+                </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FEATURED CONTENT BLOCKS */}
-      <section className="container mx-auto px-6 py-12">
-        {/* Pergunte ao RH */}
-        <div>
-          <div className="text-pink text-xs font-bold uppercase tracking-widest mb-3">💙 RH</div>
-          <h3 className="text-4xl font-bold mb-4">Pergunte ao RH</h3>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            Sua opinião faz a diferença e queremos ouvir você! 💙
-          </p>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            Se ficou com alguma dúvida, tem uma sugestão, ideia ou gostaria de compartilhar algum ponto com o RH, envie pelo formulário abaixo. Esse espaço foi criado justamente para aproximar a comunicação e garantir que os temas mais importantes para o time sejam ouvidos.
-          </p>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            E fique tranquilo: a identificação é opcional, então você pode escolher se deseja se identificar ou enviar de forma anônima.
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="https://form.jotform.com/rhRoboteasy/pergunte-ao-rh-"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-background px-7 py-3.5 rounded-full font-bold border-2 border-foreground shadow-pop hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition"
-            >
-              Enviar pergunta <ArrowRight className="w-4 h-4" />
-            </a>
           </div>
         </div>
       </section>
@@ -523,11 +716,14 @@ function Index() {
           </div>
           <div className="space-y-4">
             {[
-              { emoji: "📅", title: "EasyTalks", desc: "Agora é oficial: os EasyTalks acontecerão sempre na segunda quinta-feira de cada mês 👀" },
-              { emoji: "🌽", title: "Festa Junina", desc: "Os preparativos já começaram… e em breve divulgaremos data e detalhes oficiais 😄" },
-              { emoji: "⚽", title: "Happy Hour da Copa", desc: "Sim, teremos clima de Copa por aqui. E sim, isso provavelmente significa gritos coletivos e discussões futebolísticas saudáveis 👀" },
-              { emoji: "🖼️", title: "Troca de figurinhas da Copa", desc: "Já pode começar a separar as repetidas 😄" },
-              { emoji: "🐾", title: "Desfile Pet", desc: "Em breve teremos mais informações sobre uma das iniciativas mais importantes da firma: ver pets extremamente fofos em contexto corporativo 💙" },
+              { emoji: "📅", title: "Próximo EasyTalk", desc: "Já tem data definida: Dia 09 de julho às 09:00" },
+              { emoji: "🐾", title: "Desfile Pet", desc: "Já temos data marcada! 📅 29/06 inicia a campanha oficialmente para envio das fotos/vídeos… Preparem os modelos de quatro patas 😄" },
+              { emoji: "⚽", title: "Happy Hour da Copa", desc: "Estão todos convocados! 📅 24/07 às 19h — Momento oficial para torcer, comentar e sofrer coletivamente pelos resultados." },
+              { emoji: "🏐", title: "Fit Hour – Vôlei de Areia (nova data)", desc: "📅 02/07 às 19h — Beachville. Preparem o espírito esportivo e bora jogar!" },
+              { emoji: "🌽", title: "Festa Junina Roboteasy", desc: "📅 10/07 às 19h — Em breve mais informações, mas já adiantamos: família e acompanhantes são bem-vindos! Porque paçoca, bandeirinha e comida típica nunca decepcionam 😄" },
+              { emoji: "📸", title: "VAR do Robonews", desc: "Achou que só a Copa tinha árbitro de vídeo? Nada disso 😄 O Robonews segue analisando lances e investigando acontecimentos suspeitos pelos corredores. Se você encontrar um flagra digno, já sabe: 📩 acione nossa central de jornalismo e seja um informante Robonews!" },
+              { emoji: "🤠", title: "Concurso caipira?? É óbvio que sim!!", desc: "Teremos o tão famoso concurso caipira da Roboteasy… jájá mais informações!" },
+              { emoji: "🏆", title: "Bolão da Copa rolando...", desc: "E muitos rumores sobre um prêmio surpresa começam a circular pelos corredores da firma… E aí? Qual o seu palpite? 👀" },
             ].map((e, i) => (
               <div key={i} className="bg-background border-2 border-foreground rounded-2xl p-5 flex items-start gap-5 hover:translate-x-1 transition shadow-pop">
                 <div className="text-3xl shrink-0 mt-0.5">{e.emoji}</div>
@@ -581,7 +777,6 @@ function Index() {
             <img src={logoRoboteasy} alt="Roboteasy" className="h-10 w-auto" style={{ filter: 'brightness(0) invert(1)' }} />
 
             <div className="flex flex-col items-center gap-1 text-sm text-background/60 text-center">
-              <span>📅 Próxima edição: <strong className="text-background">12 de junho de 2026</strong></span>
               <span>robonews · comunicação interna · feito com 💗 pelo time</span>
             </div>
 
