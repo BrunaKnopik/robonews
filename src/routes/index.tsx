@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const editions = ["Edição #110", "27 Jul 2026", "Tempo de leitura: 4 min", "☕ Pegue seu café"];
+const editions = ["Edição #110", "28 Jul 2026", "Tempo de leitura: 4 min", "☕ Pegue seu café"];
 
 function Index() {
   return (
@@ -100,7 +100,7 @@ function Index() {
             <Megaphone className="w-3.5 h-3.5" /> Manchete da semana
           </div>
           <span className="hidden md:block text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            Edição #110 · 27 Jul 2026
+            Edição #110 · 28 Jul 2026
           </span>
         </div>
 
