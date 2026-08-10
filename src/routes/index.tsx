@@ -54,12 +54,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const tickerItems = [
-  "Edição #111 · Especial",
-  "🐾 Desfile Pet",
-  "04 Ago 2026",
-  "💙 Prepare o coração",
-];
+const tickerItems = ["Edição #111 · Especial", "🐾 Desfile Pet", "💙 Prepare o coração"];
 
 const bynumbers = [
   { value: "21+", label: "Pets no elenco" },
@@ -586,7 +581,7 @@ function Index() {
       </div>
 
       {/* EDITORIAL */}
-      <section id="editorial" className="container mx-auto px-6 py-16 max-w-3xl">
+      <section id="editorial" className="container px-6 py-16 max-w-3xl">
         <div className="inline-flex items-center gap-2 bg-teal/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
           ✍️ Editorial
         </div>
